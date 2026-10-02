@@ -1,7 +1,4 @@
-![Uploading windows-endpoint-validation.png…]()
-![Uploading splunk-saved-report.png…]()
-![Uploading whoami-detection.png…]()
-# SIEM Endpoint Monitoring Lab (Splunk + Sysmon)
+<img width="1861" height="964" alt="splunk-saved-report" src="https://github.com/user-attachments/assets/074b8460-1f42-4b11-a5cd-3258e74334ec" /># SIEM Endpoint Monitoring Lab (Splunk + Sysmon)
 
 A home lab that collects Windows endpoint telemetry with **Sysmon**, ships it with the **Splunk Universal Forwarder**, and analyzes it in **Splunk Enterprise** to detect suspicious process activity.
 
@@ -199,3 +196,12 @@ Useful forwarder log: `C:\Program Files\SplunkUniversalForwarder\var\log\splunk\
 ## Disclaimer
 
 This lab runs in an isolated virtual environment for learning purposes. Do not run simulated attack commands on systems you do not own.
+
+## Portfolio Screenshots
+
+<img width="1009" height="718" alt="windows-endpoint-validation" src="https://github.com/user-attachments/assets/170caedf-f5f1-43f7-851e-cb30a00bfd22" />
+<img width="1861" height="964" alt="splunk-saved-report" src="https://github.com/user-attachments/assets/286bf2fe-6be2-498d-a4aa-368acafbf3d9" />
+<img width="1861" height="964" alt="whoami-detection" src="https://github.com/user-attachments/assets/14927c15-02aa-40f9-88fc-544793f1ce39" />
+
+
+
