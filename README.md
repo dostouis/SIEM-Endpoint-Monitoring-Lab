@@ -1,4 +1,4 @@
-<img width="1861" height="964" alt="splunk-saved-report" src="https://github.com/user-attachments/assets/074b8460-1f42-4b11-a5cd-3258e74334ec" /># SIEM Endpoint Monitoring Lab (Splunk + Sysmon)
+# SIEM Endpoint Monitoring Lab (Splunk + Sysmon)
 
 A home lab that collects Windows endpoint telemetry with **Sysmon**, ships it with the **Splunk Universal Forwarder**, and analyzes it in **Splunk Enterprise** to detect suspicious process activity.
 
@@ -127,7 +127,7 @@ Filtering on `<EventID>1</EventID>` in the base search lets Splunk discard non-m
 
 ---
 
-## 🧪 Threat Simulation and Validation
+## Threat Simulation and Validation
 
 | Item | Detail |
 |---|---|
@@ -144,13 +144,9 @@ Filtering on `<EventID>1</EventID>` in the base search lets Splunk discard non-m
 | `ParentImage` | `powershell.exe` |
 | `User` | `LLANES\KURT LUIS` |
 
-<!-- Add screenshots here, e.g.:
-![Splunk search results](docs/screenshots/whoami-detection.png)
--->
-
 ---
 
-## 🔎 Example Detection Ideas (Next Steps)
+## Example Detection Ideas (Next Steps)
 
 Simple extensions using the same fields:
 
@@ -197,11 +193,21 @@ Useful forwarder log: `C:\Program Files\SplunkUniversalForwarder\var\log\splunk\
 
 This lab runs in an isolated virtual environment for learning purposes. Do not run simulated attack commands on systems you do not own.
 
+---
+
 ## Portfolio Screenshots
 
+### Windows endpoint validation
+Endpoint-side verification that Sysmon and the forwarder are running and generating events.
+
 <img width="1009" height="718" alt="windows-endpoint-validation" src="https://github.com/user-attachments/assets/170caedf-f5f1-43f7-851e-cb30a00bfd22" />
+
+### Saved Splunk report
+The reusable report **Sysmon - Process Creation (Event ID 1)** in Splunk.
+
 <img width="1861" height="964" alt="splunk-saved-report" src="https://github.com/user-attachments/assets/286bf2fe-6be2-498d-a4aa-368acafbf3d9" />
+
+### `whoami /priv` detection
+Splunk results showing the simulated privilege enumeration with extracted `Image`, `CommandLine`, `ParentImage` and `User` fields.
+
 <img width="1861" height="964" alt="whoami-detection" src="https://github.com/user-attachments/assets/14927c15-02aa-40f9-88fc-544793f1ce39" />
-
-
-
