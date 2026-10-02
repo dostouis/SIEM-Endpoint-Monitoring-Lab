@@ -1,3 +1,6 @@
+![Uploading windows-endpoint-validation.png…]()
+![Uploading splunk-saved-report.png…]()
+![Uploading whoami-detection.png…]()
 # SIEM Endpoint Monitoring Lab (Splunk + Sysmon)
 
 A home lab that collects Windows endpoint telemetry with **Sysmon**, ships it with the **Splunk Universal Forwarder**, and analyzes it in **Splunk Enterprise** to detect suspicious process activity.
