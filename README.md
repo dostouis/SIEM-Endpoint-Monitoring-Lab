@@ -197,17 +197,17 @@ This lab runs in an isolated virtual environment for learning purposes. Do not r
 
 ## Portfolio Screenshots
 
-### Windows endpoint validation
+### Network & Endpoint Validation
 Endpoint-side verification that Sysmon and the forwarder are running and generating events.
 
 <img width="1009" height="718" alt="windows-endpoint-validation" src="https://github.com/user-attachments/assets/170caedf-f5f1-43f7-851e-cb30a00bfd22" />
 
-### Saved Splunk report
-The reusable report **Sysmon - Process Creation (Event ID 1)** in Splunk.
-
-<img width="1861" height="964" alt="splunk-saved-report" src="https://github.com/user-attachments/assets/286bf2fe-6be2-498d-a4aa-368acafbf3d9" />
-
-### `whoami /priv` detection
+### Parsed Detection Query (`whoami /priv`)
 Splunk results showing the simulated privilege enumeration with extracted `Image`, `CommandLine`, `ParentImage` and `User` fields.
 
 <img width="1861" height="964" alt="whoami-detection" src="https://github.com/user-attachments/assets/14927c15-02aa-40f9-88fc-544793f1ce39" />
+
+### Saved SIEM Report
+The reusable report **Sysmon - Process Creation (Event ID 1)** in Splunk.
+
+<img width="1861" height="964" alt="splunk-saved-report" src="https://github.com/user-attachments/assets/286bf2fe-6be2-498d-a4aa-368acafbf3d9" />
