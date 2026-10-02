@@ -1,4 +1,4 @@
-# 🛡️ SIEM Endpoint Monitoring Lab (Splunk + Sysmon)
+# SIEM Endpoint Monitoring Lab (Splunk + Sysmon)
 
 A home lab that collects Windows endpoint telemetry with **Sysmon**, ships it with the **Splunk Universal Forwarder**, and analyzes it in **Splunk Enterprise** to detect suspicious process activity.
 
@@ -9,7 +9,7 @@ A home lab that collects Windows endpoint telemetry with **Sysmon**, ships it wi
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project builds a small but complete detection pipeline:
 
@@ -22,7 +22,7 @@ This project builds a small but complete detection pipeline:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────┐            ┌─────────────────────────────┐
@@ -43,7 +43,7 @@ This project builds a small but complete detection pipeline:
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 - Splunk Enterprise installed on Ubuntu, with a receiving port enabled (**Settings → Forwarding and receiving → Configure receiving → 9997**)
 - Windows 11 VM reachable from the Ubuntu host over the virtual network
@@ -52,7 +52,7 @@ This project builds a small but complete detection pipeline:
 
 ---
 
-## ⚙️ Implementation
+## Implementation
 
 ### 1. Network and ingestion
 
@@ -111,7 +111,7 @@ Restart-Service SplunkForwarder
 
 ---
 
-## 📊 Core Detection Query
+## Core Detection Query
 
 ```spl
 index=main sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" "<EventID>1</EventID>"
@@ -170,7 +170,7 @@ index=main sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" "<Ev
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 | Symptom | Check |
 |---|---|
@@ -183,7 +183,7 @@ Useful forwarder log: `C:\Program Files\SplunkUniversalForwarder\var\log\splunk\
 
 ---
 
-## 💡 Skills Demonstrated
+## Skills Demonstrated
 
 - **SIEM administration:** Splunk Enterprise indexing, receiving ports, Universal Forwarder deployment
 - **Endpoint telemetry:** Sysmon Event ID 1, Windows Event Log channels, service account permissions
@@ -193,6 +193,6 @@ Useful forwarder log: `C:\Program Files\SplunkUniversalForwarder\var\log\splunk\
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This lab runs in an isolated virtual environment for learning purposes. Do not run simulated attack commands on systems you do not own.
